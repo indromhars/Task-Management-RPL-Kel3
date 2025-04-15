@@ -12,6 +12,16 @@
         body {
             font-family: 'Inter', sans-serif;
         }
+        .gradient-text {
+            background: linear-gradient(90deg, #3B82F6 0%, #10B981 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .motto-card {
+            background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+        }
     </style>
 </head>
 <body class="bg-gray-50">
@@ -42,6 +52,53 @@
                     <p class="mt-4 text-xl text-gray-600">
                         A comprehensive project management solution for modern teams
                     </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Motto Section -->
+        <div class="relative py-16 overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-br from-blue-50 to-green-50"></div>
+            <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div class="text-center md:text-left">
+                        <h3 class="text-3xl font-bold gradient-text mb-4">
+                            "Empowering Teams, Delivering Excellence"
+                        </h3>
+                        <p class="text-lg text-gray-600 mb-6">
+                            Transform your project management experience with our intuitive platform. 
+                            Where collaboration meets efficiency, and success becomes a habit.
+                        </p>
+                        <div class="flex flex-col md:flex-row gap-4 justify-center md:justify-start">
+                            <div class="bg-white p-4 rounded-lg shadow-sm motto-card">
+                                <p class="text-sm text-gray-600">"The best way to predict the future is to create it."</p>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg shadow-sm motto-card">
+                                <p class="text-sm text-gray-600">"Teamwork makes the dream work."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden md:block">
+                        <div class="relative">
+                            <div class="absolute inset-0 bg-gradient-to-r from-blue-500 to-green-500 rounded-lg transform rotate-3"></div>
+                            <div class="relative bg-white p-8 rounded-lg shadow-lg">
+                                <div class="space-y-4">
+                                    <div class="flex items-center space-x-2">
+                                        <div class="w-3 h-3 bg-blue-500 rounded-full"></div>
+                                        <p class="text-gray-600">Organize projects with ease</p>
+                                    </div>
+                                    <div class="flex items-center space-x-2">
+                                        <div class="w-3 h-3 bg-green-500 rounded-full"></div>
+                                        <p class="text-gray-600">Track progress in real-time</p>
+                                    </div>
+                                    <div class="flex items-center space-x-2">
+                                        <div class="w-3 h-3 bg-purple-500 rounded-full"></div>
+                                        <p class="text-gray-600">Collaborate seamlessly</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
